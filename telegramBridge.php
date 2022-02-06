@@ -140,7 +140,7 @@ $botAction = "/deleteMessage";
 
 $params=[
     'chat_id' => $update["message"]["chat"]["id"],
-    'sticker' => "CAACAgIAAxkBAAEH67Fh_6jcO-OIVhvicN1LGKAJvr1JBAACJgADVGsfGAvOvoeDtcHzIwQ",
+    'message_id' => $update["message"]["message_id"],
 ];
 
 //---- SEND TO API ----
@@ -162,7 +162,7 @@ $botAction = "/sendsticker";
 
 $params=[
     'chat_id' => $update["message"]["chat"]["id"],
-    'text' => ""
+    'sticker' => "CAACAgIAAxkBAAEH67Fh_6jcO-OIVhvicN1LGKAJvr1JBAACJgADVGsfGAvOvoeDtcHzIwQ",
 ];
 
 
