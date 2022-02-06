@@ -159,10 +159,14 @@ curl_close($ch);
 
 
 $botAction = "/sendsticker";
-
+$stickerIDs = [
+    "CAACAgIAAxkBAAEH68ph_66_kKvXgZAsc7F81U7WSqx3yAACXQADqWrYBc22ueD-3oDgIwQ",
+    "CAACAgIAAxkBAAEH67Fh_6jcO-OIVhvicN1LGKAJvr1JBAACJgADVGsfGAvOvoeDtcHzIwQ",
+    "CAACAgIAAxkBAAEH68hh_66aX8vxf3Prqm7ahOc-ib9AyAACBAADLgspEY3vyN7RcBVnIwQ",
+];
 $params=[
     'chat_id' => $update["message"]["chat"]["id"],
-    'sticker' => "CAACAgIAAxkBAAEH67Fh_6jcO-OIVhvicN1LGKAJvr1JBAACJgADVGsfGAvOvoeDtcHzIwQ",
+    'sticker' => array_rand($stickerIDs),
 ];
 
 
